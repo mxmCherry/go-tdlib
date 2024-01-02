@@ -21,7 +21,7 @@ This lib links against `tdjson_static` for no particular reason (just because I 
 
 This lib has Linux-specific `LDFLAGS` as of now. Darwin etc can be copied later from, for example, [zelenin/go-tdlib](https://github.com/zelenin/go-tdlib) if ever needed.
 
-For external (normal, `go get`-able) lib use, you'll have to either put TDLib `include` and `lib` dirs somewhere in known places (like `/usr/src` or `/usr/lib` etc) or configure `CFLAGS`/`LDFLAGS` on your own.
+For external (normal, `go get`-able) lib use, you'll have to either put TDLib `include` and `lib` dirs somewhere in known places (like `/usr/local/{include,lib}`) or configure `CFLAGS`/`LDFLAGS` on your own.
 
 You can provide the CGo config when running Go commands (`run`, `build` etc):
 

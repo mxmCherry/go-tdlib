@@ -7,8 +7,8 @@ package tdlib
 import "unsafe"
 
 /*
-#cgo linux CFLAGS: -I"third-party/td/tdlib/include"
-#cgo linux LDFLAGS: -L"third-party/td/tdlib/lib" -ltdjson_static -ltdjson_private -ltdclient -ltdcore -ltdactor -ltdapi -ltddb -ltdsqlite -ltdnet -ltdutils -lstdc++ -lssl -lcrypto -ldl -lz -lm
+#cgo linux CFLAGS: -I/usr/local/include -I"third-party/td/tdlib/include"
+#cgo linux LDFLAGS: -L/usr/local/lib -L"third-party/td/tdlib/lib" -ltdjson_static -ltdjson_private -ltdclient -ltdcore -ltdactor -ltdapi -ltddb -ltdsqlite -ltdnet -ltdutils -lstdc++ -lssl -lcrypto -ldl -lz -lm
 
 #include <stdlib.h>
 #include <td/telegram/td_json_client.h>
