@@ -23,28 +23,6 @@ This lib has Linux-specific `LDFLAGS` as of now. Darwin etc can be copied later 
 
 For external (normal, `go get`-able) lib use, you'll have to either put TDLib `include` and `lib` dirs somewhere in known places (like `/usr/src` or `/usr/lib` etc) or configure `CFLAGS`/`LDFLAGS` on your own.
 
-### Setting `CFLAGS`/`LDFLAGS` In Go Code
-
-You can have the CGo bits in your own Go code:
-
-```go
-package yourpkg
-
-// Note: the followith path(s) can be either relative to current source dir or be absolute (full) ones like "/full/path/to/tdlib/{include,dir}"
-
-/*
-# cgo linux CFLAGS: -I"path/to/tdlib/include"
-# cgo linux LDLAGS: -L"path/to/tdlib/lib"
-*/
-import "C"
-
-import "github.com/mxmCherry/go-tdlib"
-
-// your code
-```
-
-### Providing `CFLAGS`/`LDFLAGS` To Go Command
-
 You can provide the CGo config when running Go commands (`run`, `build` etc):
 
 ```shell
