@@ -1,4 +1,6 @@
-# TDLib
+# go-tdlib
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/mxmCherry/go-tdlib.svg)](https://pkg.go.dev/github.com/mxmCherry/go-tdlib)
 
 Low-level [TDLib](https://github.com/tdlib/td) [CGo](https://pkg.go.dev/cmd/cgo) wrapper.
 
