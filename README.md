@@ -48,8 +48,8 @@ import "github.com/mxmCherry/go-tdlib"
 You can provide the CGo config when running Go commands (`run`, `build` etc):
 
 ```shell
-CGO_CFLAGS='-I"/full/path/to/tdlib/include"' \
-CGO_LDFLAGS='-L"/full/path/to/tdlib/lib"' \
+CGO_CFLAGS='"-I/full/path/to/tdlib/include"' \
+CGO_LDFLAGS='"-L/full/path/to/tdlib/lib"' \
   go run main.go
 ```
 
