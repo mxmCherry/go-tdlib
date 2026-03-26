@@ -8,7 +8,7 @@ import "unsafe"
 
 /*
 #cgo linux CFLAGS: -I/usr/local/include -I"third-party/td/tdlib/include"
-#cgo linux LDFLAGS: -L/usr/local/lib -L"third-party/td/tdlib/lib" -ltdjson_static -ltdjson_private -ltdclient -ltdcore -ltdmtproto -ltdactor -ltdapi -ltddb -ltdsqlite -ltdnet -ltdutils -ltde2e -lstdc++ -lssl -lcrypto -ldl -lz -lm
+#cgo linux LDFLAGS: -L/usr/local/lib -L"third-party/td/tdlib/lib" -ltdjson_static -ltdjson_private -ltdclient -ltdcore -ltdmtproto -ltdactor -ltdapi -ltddb -ltdsqlite -ltdnet -ltde2e -ltdutils -lstdc++ -lssl -lcrypto -ldl -lz -lm
 
 #include <stdlib.h>
 #include <td/telegram/td_json_client.h>
