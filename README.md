@@ -32,3 +32,24 @@ CGO_LDFLAGS='"-L/full/path/to/tdlib/lib"' \
 ```
 
 Keep in mind, that absolute (full) path is mandatory in this use case.
+
+## Building TDLib
+
+### Locally
+
+```shell
+make
+make clean # to clean for fresh build
+```
+
+Outputs to `third-party/td/tdlib/{include,lib}`.
+
+### With Fedora Dockerfile
+
+```shell
+cd docker-build
+make
+make clean # to clean for fresh builds
+```
+
+Outputs to `docker-build/tdlib/{include,lib}`.

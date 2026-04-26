@@ -1,3 +1,9 @@
+# This Makefile builds tdlib on the host system.
+# Can find Fedora deps hints from ./docker-build/Dockerfile
+# Can link docker-built lib for local dev:
+# cp -r ./third-party/td/tdlib ./docker-build/tdlib
+# (or mv; mkdir first if needed; symlinks don't work)
+
 .PHONY: default
 default: third-party/td/tdlib
 
