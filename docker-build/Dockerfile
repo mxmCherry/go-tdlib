@@ -1,4 +1,4 @@
-FROM fedora:43
+FROM fedora:44
 
 # these don't depend on git sha, and are pretty much the same on every build
 RUN dnf install -y \
